@@ -62,18 +62,46 @@
 
 # Don't call the function, you just need to define it.
 
+values = [(10, -50, 90, -150, 450)]
 
+def all_positives(values):
 
-
-
+    for n in values:
+        if n in values > 0:
+            return True
+        else:
+            pass
+        
+    return False
+    
 
 # Dynamic Functions Practice #2
 # Create a function (sum_less) that adds the numbers of a list as long as they are greater than 0 and less than 1000, and returns the result of said sum. Create a numbers variable, storing a list of numbers so we can test it.
 
+values = [300, 50, 500]
 
+def sum_of_numbers(values):
+    total = 0
+    for n in values:
+        if n > 0 and n < 1000:
+            total += n
+        
+    return total
 
-
+print(sum_of_numbers(values))
 
 
 # Dynamic Functions Practice #3
 # Create a function (count_even) that counts the number of even numbers that exist in a list (numbers), and returns the result of said count.
+
+values = [7, 8, 12, 16, 17, 23, 36]
+
+def count_even(values):
+    count = 0
+    for n in values:
+        if n %2 == 0:
+            count += 1
+
+    return count
+
+print(count_even(values))
